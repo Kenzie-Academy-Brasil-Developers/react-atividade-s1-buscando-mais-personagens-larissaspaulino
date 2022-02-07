@@ -1,0 +1,43 @@
+html, body, div#root {
+  width: 100%;
+}
+
+.App {
+  width: inherit;
+  height: inherit;
+  background-color: #3CB1CA;
+  color: #FFF;
+  font-family: monospace;
+}
+
+header {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  width: inherit;
+  height: 130px;
+  background-color: #FFF;
+  text-align: center;
+}
+
+
+.rick {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.logo {
+  position: absolute;
+  height: 130px;
+  bottom: 83%;
+  right: 38.5%;
+}
+
+
+
+
+
+
