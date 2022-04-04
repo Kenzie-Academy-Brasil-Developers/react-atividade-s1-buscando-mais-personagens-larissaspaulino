@@ -3,7 +3,6 @@ import CharCard from "../CharCard/index"
 
 const Characters = ({ characterList ,loading, setNext}) => {
   
-  console.log(characterList)
   return (
     <>
       <h2>Meus personagens</h2>

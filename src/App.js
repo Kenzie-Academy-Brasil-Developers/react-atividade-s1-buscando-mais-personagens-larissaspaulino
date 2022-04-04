@@ -14,10 +14,10 @@ function App() {
     fetch(`https://rickandmortyapi.com/api/character/?page=${next}`)
     .then((res) => res.json())
     .then((res) => {
-      console.log(res.results)
+   
       setCharacterList([...characterList, ...res.results])
       setLoading(true)
-      if (next !== 43 ) {
+      if (next < 42) {
         setNext(next + 1)
       }
     })
@@ -31,7 +31,7 @@ function App() {
         <img className='rick' src={rickandmorty}></img>
         <img className='logo' src={logo}></img>
       </header>
-      <Characters setNext={setNext} loading={loading} characterList={characterList}></Characters>
+      <Characters loading={loading} characterList={characterList}></Characters>
     </div>
   );
 }
